@@ -18,7 +18,7 @@
             <h1 class="pt-5 font-weight-bold">Covariance Calculator</h1>
             <br/>
             <br/>
-            <h3 class="overflow-auto">$$cov={\sum_i^n\left(x_i-{\sum_i^{n_x}x_i\over n_x}\right)\left(y_i-{\sum_i^{n_y}y_i\over n_y}\right)\over n-1}$$</h3>
+            <h3 class="overflow-auto">$$cov={\sum_i^n\left(x_i-\left({\sum_i^{n_x}x_i\over n_x}\right)\right)\left(y_i-\left({\sum_i^{n_y}y_i\over n_y}\right)\right)\over n-1}$$</h3>
             <br/>
             <p>Where:
                 <ul>
@@ -69,7 +69,7 @@
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                         <p class="mb-4">\(x_i\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
                             <div id="inputX" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                                <span class="text-secondary">\(x_i\)</span>
+                                <span class="text-secondary">. . . . .</span>
                             </div>
                             <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#inputX')">copy</button>
                         </p>
@@ -78,7 +78,7 @@
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                         <p class="mb-4">\(y_i\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
                             <div id="inputY" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                                <span class="text-secondary">\(y_i\)</span>
+                                <span class="text-secondary">. . . . .</span>
                             </div>
                             <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#inputY')">copy</button>
                         </p>
@@ -87,7 +87,7 @@
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                         <p class="mb-4">\(n_x\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
                             <div id="lengthX" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                                <span class="text-secondary">\(n_x\)</span>
+                                <span class="text-secondary">. . . . .</span>
                             </div>
                             <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#lengthX')">copy</button>
                         </p>
@@ -96,7 +96,7 @@
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                         <p class="mb-4">\(n_y\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
                             <div id="lengthY" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                                <span class="text-secondary">\(n_y\)</span>
+                                <span class="text-secondary">. . . . .</span>
                             </div>
                             <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#lengthY')">copy</button>
                         </p>
@@ -107,7 +107,7 @@
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                         <p class="mb-4">\(\sum_i^{n_x}x_i\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
                             <div id="sumX" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                                <span class="text-secondary">\(\sum_i^{n_x}x_i\)</span>
+                                <span class="text-secondary">. . . . .</span>
                             </div>
                             <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#sumX')">copy</button>
                         </p>
@@ -116,7 +116,7 @@
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                         <p class="mb-4">\(\sum_i^{n_y}y_i\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
                             <div id="sumY" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                                <span class="text-secondary">\(\sum_i^{n_y}y_i\)</span>
+                                <span class="text-secondary">. . . . .</span>
                             </div>
                             <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#sumY')">copy</button>
                         </p>
@@ -125,7 +125,7 @@
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                         <p class="mb-4">\({\sum_i^{n_x}x_i\over n_x}\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
                             <div id="meanX" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                                <span class="text-secondary">\({\sum_i^{n_x}x_i\over n_x}\)</span>
+                                <span class="text-secondary">. . . . .</span>
                             </div>
                             <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#meanX')">copy</button>
                         </p>
@@ -134,7 +134,7 @@
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
                         <p class="mb-4">\({\sum_i^{n_y}x_i\over n_y}\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
                             <div id="meanY" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                                <span class="text-secondary">\({\sum_i^{n_y}x_i\over n_y}\)</span>
+                                <span class="text-secondary">. . . . .</span>
                             </div>
                             <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#meanY')">copy</button>
                         </p>
@@ -142,51 +142,53 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                        <p class="mb-4">\(x_i-{\sum_i^{n_x}x_i\over n_x}\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <p class="mb-4">\(x_i-\left({\sum_i^{n_x}x_i\over n_x}\right)\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
                             <div id="inputXMinusMeanX" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                                <span class="text-secondary">\(x_i-{\sum_i^{n_x}x_i\over n_x}\)</span>
+                                <span class="text-secondary">. . . . .</span>
                             </div>
                             <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#inputXMinusMeanX')">copy</button>
                         </p>
                         <br/>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
-                        <p class="mb-4">\(y_i-{\sum_i^{n_y}y_i\over n_x}\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                        <p class="mb-4">\(y_i-\left({\sum_i^{n_y}y_i\over n_x}\right)\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
                             <div id="inputYMinusMeanY" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                                <span class="text-secondary">\(y_i-{\sum_i^{n_y}y_i\over n_x}\)</span>
+                                <span class="text-secondary">. . . . .</span>
                             </div>
                             <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#inputYMinusMeanY')">copy</button>
                         </p>
                         <br/>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                        <p class="mb-4">\(\left({\sum_i^{n_x}x_i\over n_x}\right)\left({\sum_i^{n_y}y_i\over n_y}\right)\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <p class="mb-4">\(\left(x_i-\left({\sum_i^{n_x}x_i\over n_x}\right)\right)\left(y_i-\left({\sum_i^{n_y}y_i\over n_x}\right)\right)\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
                             <div id="inputXYMinusMeanXY" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                                <span class="text-secondary">\(\left({\sum_i^{n_x}x_i\over n_x}\right)\left({\sum_i^{n_y}y_i\over n_y}\right)\)</span>
+                                <span class="text-secondary">. . . . .</span>
                             </div>
                             <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#inputXYMinusMeanXY')">copy</button>
                         </p>
                         <br/>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                        <p class="mb-4">\(\sum_i^n\left({\sum_i^{n_x}x_i\over n_x}\right)\left({\sum_i^{n_y}y_i\over n_y}\right)\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <p class="mb-4">\(\sum_i^n\left(x_i-\left({\sum_i^{n_x}x_i\over n_x}\right)\right)\left(y_i-\left({\sum_i^{n_y}y_i\over n_x}\right)\right)\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
                             <div id="sumInputXYMinusMeanXY" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                                <span class="text-secondary">\(\sum_i^n\left({\sum_i^{n_x}x_i\over n_x}\right)\left({\sum_i^{n_y}y_i\over n_y}\right)\)</span>
+                                <span class="text-secondary">. . . . .</span>
                             </div>
                             <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#sumInputXYMinusMeanXY')">copy</button>
                         </p>
                         <br/>
                     </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <p class="mb-4">\(cov\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
-                        <div id="cov" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
-                            <span class="text-secondary">\(cov\)</span>
-                        </div>
-                        <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#cov')">copy</button>
-                    </p>
-                    <br/>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <p class="mb-4">\(cov\)<i class="fas fa-chevron-circle-down text-primary px-2"></i> 
+                            <div id="cov" class="border border-primary rounded overflow-auto p-2 text-nowrap mx-2" style="max-width: fit-content;max-height: 250px;">
+                                <span class="text-secondary">. . . . .</span>
+                            </div>
+                            <button class="btn btn-outline-primary btn-sm m-2" onclick="copy('#cov')">copy</button>
+                        </p>
+                        <br/>
+                    </div>
                 </div>
                 <button id="details-hide" class="btn btn-primary btn-block">Hide Details</button>
             </div>
