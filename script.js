@@ -105,13 +105,13 @@ function calculating() {
     //calculating x minus mean x
     inputXMinusMeanX = [];
     for (j = 0;j < lengthX;j++) {
-        inputXMinusMeanX[j] = inputX[j] - sumX;
+        inputXMinusMeanX[j] = inputX[j] - meanX;
     };
 
     //calculating y minus mean y
     inputYMinusMeanY = [];
     for (k = 0;k < lengthY;k++) {
-        inputYMinusMeanY[k] = inputY[k] - sumY;
+        inputYMinusMeanY[k] = inputY[k] - meanY;
     };
 
     //calculating xy minus mean xy
